@@ -20,15 +20,15 @@ def drawImage(screen,imgFile,dest=(0,0)):
 
 # main game loop
 def game(screen):
-    while True: 
-    for event in pygame.event.get():
-        print event.type
-        if event.type == QUIT:
-            pygame.quit()
-            sys.exit()
-            
-    drawImage(screen,IMAGE_PATH + IMAGE_BG)
-    pygame.display.update()
+    while True:
+        for event in pygame.event.get():
+            print event.type
+            if event.type == QUIT:
+                pygame.quit()
+                sys.exit()
+                
+        drawImage(screen,IMAGE_PATH + IMAGE_BG)
+        pygame.display.update()
 
 #main program - sets up pygame & starts game
 def main():

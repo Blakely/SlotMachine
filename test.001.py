@@ -45,17 +45,17 @@ def drawGame(screen):
 # main game loop
 def game(screen):
     while True: 
-    for event in pygame.event.get():
-        if event.type == QUIT:
-            pygame.quit()
-            sys.exit()
-        if event.type == MOUSEBUTTONUP:
-            #get the mouse coordinates
-            #print even.pos()
-            #mX = event.pos()
-            #mY
-    drawImage(screen,IMAGE_BG)
-    pygame.display.update()
+        for event in pygame.event.get():
+            if event.type == QUIT:
+                pygame.quit()
+                sys.exit()
+            if event.type == MOUSEBUTTONUP:
+                #get the mouse coordinates
+                #print even.pos()
+                #mX = event.pos()
+                #mY
+        drawImage(screen,IMAGE_BG)
+        pygame.display.update()
 
 #main program - sets up pygame & starts game
 def main():
