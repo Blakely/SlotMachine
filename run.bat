@@ -1,2 +1,2 @@
-slotmachine.005.py
+slotmachine.006.py
 pause
