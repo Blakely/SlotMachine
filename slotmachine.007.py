@@ -266,7 +266,7 @@ def game(screen):
                     elif (bet<=0):
                         msg=MSG_BET
                     #if the player is out of cash - game over!
-                    if (cash==0):
+                    elif (cash==0):
                         msg=MSG_ZERO
                 
                     #otherwise, if were all good to go...
