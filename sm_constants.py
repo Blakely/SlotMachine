@@ -1,3 +1,13 @@
+'''
+Filename: sm_constants.py
+Purpose:  Constants for the slotmachine.py game
+Author:   Ryan Blakely
+Date Mod: June 7, 2013
+Mod By:   Ryan Blakely
+
+Git: https://github.com/Blakely/SlotMachine
+'''
+
 #=======================================================================================
 #                      CONSTANTS
 #=======================================================================================
