@@ -1,9 +1,33 @@
+#=======================================================================================
+#                      CONSTANTS
+#=======================================================================================
+
 DISPLAY_SIZE = (600,386) #size of the screen (matches slot machine image)
 DISPLAY_TEXT = 'Slot Machine' #window title
 
 #initial values
 REELS_INIT = (0,0,0) #initial reels
 
+#dimensions of the games buttons
+BTN_WIDTH=80
+BTN_HEIGHT=40
+#draw start position for the games buttons (one on top of the other)
+BTN_X=5
+BTN_Y=120
+#"rectangles" representing the games buttons
+# -- they will be right ontop of eachother
+BTNRESET_RECT = (BTN_X,BTN_Y,BTN_X+BTN_WIDTH,BTN_Y+BTN_HEIGHT)
+BTNQUIT_RECT = (BTN_X,BTN_Y+BTN_HEIGHT,BTN_X+BTN_WIDTH,BTN_Y+BTN_HEIGHT+BTN_HEIGHT)
+
+#button identifiers
+BTNRESET="reset"
+BTNQUIT="quit"
+
+#the games buttons
+BUTTONS = {BTNRESET:BTNRESET_RECT,
+           BTNQUIT:BTNQUIT_RECT}
+
+#dictionary-key names for the GAME_TEXT dictionary
 TEXTS_INIT="init"
 TEXTS_TXT="txt"
 TEXTS_SIZE="txtsize"
@@ -24,7 +48,7 @@ POT = {TEXTS_INIT:0,
        TEXTS_POS:(180,270),
        TEXTS_VPOS:(275,270)} 
 
-CASH = {TEXTS_INIT:1,
+CASH = {TEXTS_INIT:100,
         TEXTS_TXT:"Your Money ($):",
         TEXTS_SIZE:18,
         TEXTS_POS:(140,357),
